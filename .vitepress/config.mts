@@ -16,17 +16,28 @@ export default defineConfig({
         rel: 'sponsored'
       }
     ],
-
     sidebar: [
+      {
+        text: 'React',
+        items: []
+      },
       {
         text: 'NestJS',
         items: [
           { text: '快速上手', link: '/docs/nestjs/getting-started' },
-          {text:"创建第一个API",link:"/docs/nestjs/first-api"}
+          { text: "创建第一个RESTful API", link:"/docs/nestjs/first-api" },
+          { text: "http的请求方式", link:"/docs/nestjs/http-request-method" },
+          { text: "控制反转&依赖注入", link:"/docs/nestjs/ioc" }
         ]
+      },
+      {
+        text:"Docker",
+        items: []
       }
     ],
-
+    search:{
+      provider:"local"
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/chxxxxxx1' }
     ],
