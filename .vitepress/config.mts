@@ -3,7 +3,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "chxxxxxx1",
-  description: "还不知道写什么",
+  description: "记录我的成长之路～",
+  
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -22,18 +23,32 @@ export default defineConfig({
         items: []
       },
       {
+        text: "TypeScript",
+        items: []
+      },
+      {
         text: 'NestJS',
+        collapsed:true,
+        base:"/docs/nestjs",
         items: [
-          { text: '快速上手', link: '/docs/nestjs/getting-started' },
-          { text: "创建第一个RESTful API", link:"/docs/nestjs/first-api" },
-          { text: "http的请求方式", link:"/docs/nestjs/http-request-method" },
-          { text: "控制反转&依赖注入", link:"/docs/nestjs/ioc" }
+          { text: '快速上手', link: '/getting-started' },
+          { text: "创建第一个RESTful API", link:"/first-api" },
+          { text: "http的请求方式", link:"/http-request-method" },
+          { text: "控制反转&依赖注入", link:"/ioc" }
         ]
+      },
+      {
+        text:"NextJS",
+        items: []
       },
       {
         text:"Docker",
         items: []
-      }
+      },
+      {
+        text:"Rust",
+        items: []
+      },
     ],
     search:{
       provider:"local"

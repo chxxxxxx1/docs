@@ -1,10 +1,9 @@
 {
   "devDependencies": {
-    "vitepress": "^1.0.2",
-    "zx": "^8.0.2"
+    "vitepress": "^1.2.0"
   },
   "scripts": {
-    "dev": "vitepress dev",
+    "dev": "vitepress dev ",
     "build": "vitepress build",
     "docs:preview": "vitepress preview",
     "build:tar": "cd .vitepress && tar cvf dist.tar dist/* && mv dist.tar ..",
