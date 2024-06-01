@@ -7,6 +7,6 @@
     "build": "vitepress build",
     "docs:preview": "vitepress preview",
     "build:tar": "cd .vitepress && tar cvf dist.tar dist/* && mv dist.tar ..",
-    "build:docker": "vitepress build && npm run build:tar && docker buildx build --platform linux/amd64,linux/arm64 -t registry.cn-hangzhou.aliyuncs.com/images-lib/console:docs-image-1.0.0 -f ./Dockerfile . --push ."
+    "build:docker": "vitepress build && npm run build:tar && docker buildx build --platform linux/amd64,linux/arm64 -t registry.cn-hangzhou.aliyuncs.com/images-lib/console:docs-image-1.0.0 --push ."
   }
 }
