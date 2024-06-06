@@ -2,3 +2,4 @@ node_modules
 .vitepress/dist
 .vitepress/cache
 dist.tar
+.DS_Store
