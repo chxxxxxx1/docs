@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "chxxxxxx1",
   description: "记录我的成长之路～",
-
+  lastUpdated: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -77,8 +77,23 @@ export default defineConfig({
         ],
       },
       {
-        text: "NextJS",
-        items: [],
+        text: "Rust",
+        collapsed: true,
+        base: "/docs/rust",
+        items: [
+          {
+            text: "安装",
+            link: "/install",
+          },
+          {
+            text: "快速上手",
+            link: "/hello-world",
+          },
+          {
+            text: "猜数游戏",
+            link: "/guess-game",
+          },
+        ],
       },
       {
         text: "Docker",
